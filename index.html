@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luka Adventure</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="game-container">
+    <canvas id="game-canvas" width="400" height="225"></canvas>
+    <div id="scanlines"></div>
+
+    <!-- Loading screen (HTML, hides once JS initializes) -->
+    <div id="loading-screen">
+      <div class="loading-content">
+        <h1>LUKA<br>ADVENTURE</h1>
+        <div class="loading-bar">
+          <div class="loading-fill"></div>
+        </div>
+        <p>Cargando mundo...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Load order matters: constants first, then utilities, then game modules -->
+  <script src="js/constants.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/input.js"></script>
+  <script src="js/sprites.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/entities.js"></script>
+  <script src="js/levels.js"></script>
+  <script src="js/boss.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/save.js"></script>
+  <script src="js/achievements.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
