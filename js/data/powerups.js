@@ -1,6 +1,6 @@
 'use strict';
 
-// ─── THE CORES ────────────────────────────────────────────────
+// THE CORES
 // Eight timed power-ups plus one permanent unlock. Each changes what Luka
 // can *do*, not just his stats, and each has a level-interaction: Titan
 // breaks blocks, Shadow passes phase walls, Gravity flips the world.

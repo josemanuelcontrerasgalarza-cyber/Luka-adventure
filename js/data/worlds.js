@@ -1,6 +1,6 @@
 'use strict';
 
-// ─── THE NINE WORLDS OF LUKA ADVENTURE ────────────────────────────
+// THE NINE WORLDS OF LUKA ADVENTURE
 // Every world owns: a palette, a parallax recipe, a gravity/friction
 // profile, an enemy roster, the mechanics it teaches, and its bosses.
 // Adding world 10 means appending one object here — nothing else.
@@ -28,7 +28,6 @@ const ARCHETYPES = [
 ];
 
 const WORLDS = [
-  // ════════════════════════════════════════════════════════
   {
     id: 1,
     name: "Luka's Meadow",
@@ -56,7 +55,6 @@ const WORLDS = [
     relic:    'Meadow Relic',
   },
 
-  // ════════════════════════════════════════════════════════
   {
     id: 2,
     name: 'Sunset Desert',
@@ -84,7 +82,6 @@ const WORLDS = [
     relic:    'Sun Relic',
   },
 
-  // ════════════════════════════════════════════════════════
   {
     id: 3,
     name: 'Crystal Caverns',
@@ -112,7 +109,6 @@ const WORLDS = [
     relic:    'Prism Relic',
   },
 
-  // ════════════════════════════════════════════════════════
   {
     id: 4,
     name: 'Mystic Forest',
@@ -140,7 +136,6 @@ const WORLDS = [
     relic:    'Verdant Relic',
   },
 
-  // ════════════════════════════════════════════════════════
   {
     id: 5,
     name: 'Frozen Kingdom',
@@ -168,7 +163,6 @@ const WORLDS = [
     relic:    'Glacier Relic',
   },
 
-  // ════════════════════════════════════════════════════════
   {
     id: 6,
     name: 'Sky Ruins',
@@ -196,7 +190,6 @@ const WORLDS = [
     relic:    'Zephyr Relic',
   },
 
-  // ════════════════════════════════════════════════════════
   {
     id: 7,
     name: 'Clockwork City',
@@ -224,7 +217,6 @@ const WORLDS = [
     relic:    'Gear Relic',
   },
 
-  // ════════════════════════════════════════════════════════
   {
     id: 8,
     name: 'Volcanic Abyss',
@@ -252,7 +244,6 @@ const WORLDS = [
     relic:    'Ember Relic',
   },
 
-  // ════════════════════════════════════════════════════════
   {
     id: 9,
     name: 'The Void',
