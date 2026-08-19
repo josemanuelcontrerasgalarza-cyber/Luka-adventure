@@ -1,6 +1,6 @@
 'use strict';
 
-// ─── CAMERA ───────────────────────────────────────────────────
+// ─── CAMERA ───
 // Dead zone so small movements don't swim, look-ahead so you can see where
 // you're running, and a shake channel for impacts.
 

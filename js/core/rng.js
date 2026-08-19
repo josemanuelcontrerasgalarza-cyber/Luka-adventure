@@ -1,6 +1,6 @@
 'use strict';
 
-// ─── DETERMINISTIC SEEDED RNG ─────────────────────────────────
+// ─── DETERMINISTIC SEEDED RNG ───
 // Levels must be identical on every playthrough, so no Math.random()
 // is allowed anywhere in level generation. mulberry32 is small, fast
 // and has good distribution for our purposes.
@@ -66,7 +66,7 @@ function hashSeed(str) {
   return h >>> 0;
 }
 
-// ─── MATH HELPERS ─────────────────────────────────────────────
+// ─── MATH HELPERS ───
 const clamp  = (v, lo, hi) => v < lo ? lo : v > hi ? hi : v;
 const lerp   = (a, b, t) => a + (b - a) * t;
 const approach = (cur, target, step) => {
@@ -82,7 +82,7 @@ const aabb = (a, b) =>
   a.x < b.x + b.w && a.x + a.w > b.x &&
   a.y < b.y + b.h && a.y + a.h > b.y;
 
-// ─── JUMP REACH SOLVER ────────────────────────────────────────
+// ─── JUMP REACH SOLVER ───
 // The generator must never place a gap or ledge Luka cannot clear.
 // These derive the true reach from the physics constants, per level
 // (gravity varies between worlds).
