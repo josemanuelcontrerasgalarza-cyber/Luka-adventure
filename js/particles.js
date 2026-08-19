@@ -168,11 +168,12 @@ const Particles = (() => {
     }
   }
 
-  function draw(ctx, camX) {
+  function draw(ctx, camX, camY = 0) {
     for (const p of pool) {
       ctx.globalAlpha = Math.max(0, p.alpha);
       ctx.fillStyle = p.color;
-      ctx.fillRect(p.x - camX - p.size * 0.5 | 0, p.y - p.size * 0.5 | 0, p.size, p.size);
+      ctx.fillRect((p.x - camX - p.size * 0.5) | 0,
+                   (p.y - camY - p.size * 0.5) | 0, p.size, p.size);
     }
     ctx.globalAlpha = 1;
   }
