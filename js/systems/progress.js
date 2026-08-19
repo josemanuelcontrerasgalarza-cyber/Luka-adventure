@@ -1,6 +1,6 @@
 'use strict';
 
-// ─── PROGRESS & SAVE ───
+// PROGRESS & SAVE
 // One save slot in localStorage, holding per-level records so the world map
 // can show what is beaten, what still hides a secret, and the 100% figure.
 
@@ -73,7 +73,7 @@ const Progress = (() => {
   }
   function get() { return data; }
 
-  // ── Level records ──
+  // Level records
   function record(levelId) {
     if (!data.levels[levelId]) data.levels[levelId] = levelRecord();
     return data.levels[levelId];
@@ -150,7 +150,7 @@ const Progress = (() => {
     return { firstClear, newly };
   }
 
-  // ── Power-ups ──
+  // Power-ups
   function grantPowerup(type) {
     if (POWERUPS[type] && POWERUPS[type].permanent) {
       data.powerups[type] = true;
@@ -161,7 +161,7 @@ const Progress = (() => {
   }
   function hasPowerup(type) { return !!data.powerups[type]; }
 
-  // ── Completion stats ──
+  // Completion stats
   function stats() {
     const ids = allLevelIds();
     let completed = 0, secrets = 0, perfectCoins = 0, noDamage = 0, deaths = 0;
